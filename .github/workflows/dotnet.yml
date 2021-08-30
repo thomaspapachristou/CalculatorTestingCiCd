@@ -32,7 +32,7 @@ jobs:
       with:
           fetch-depth: 0
           tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          release_name: Release ${{ github.run_number }}
           body:
             Ton KJ de poche
           draft: false
