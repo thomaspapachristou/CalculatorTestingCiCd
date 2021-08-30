@@ -30,7 +30,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-          fetch-depth: 0
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.run_number }}
           body:
